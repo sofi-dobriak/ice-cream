@@ -193,7 +193,7 @@ input {
     right: -50px;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url(../images/elipse.png);
+    background-image: url(../images/mobile/hero-elipse.png);
 }
 
 .hero-content {
