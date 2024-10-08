@@ -287,9 +287,8 @@ input {
 
 .hero-img {
     position: absolute;
-    top: 98px;
-    right: 36px;
+    top: 80px;
+    right: 0;
     z-index: 2;
-    width: 170px;
-    height: 410px;
+    width: 290px;
 }
