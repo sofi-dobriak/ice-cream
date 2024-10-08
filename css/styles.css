@@ -185,13 +185,15 @@ input {
 }
 
 .hero-section-container::after {
-    position: fixed;
+    position: absolute;
     content: "";
 
-    width: 244px;
+    width: 346px;
     height: 344px;
-    right: 0px;
-    background-image: url(../images/mobile/hero-elipse.png);
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../images/elipse.png);
 }
 
 .hero-content {
