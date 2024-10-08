@@ -1,16 +1,19 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
 
-    <svg id="icon-close-button" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.25925 1L14.7407 15" stroke="white" />
-        <path d="M1 14.7407L15 1.25924" stroke="white" />
-    </svg>
+    <symbol id="icon-burger" viewBox="0 0 46 32">
+      <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714"></path>
+      <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 16h45.714"></path>
+      <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 29.714h45.714"></path>
+    </symbol>
 
-    <svg id="icon-burger" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 1H20" stroke="#D41443" />
-        <path d="M0 7H20" stroke="#D41443" />
-        <path d="M0 13H20" stroke="#D41443" />
-    </svg>
+    <symbol id="icon-close" viewBox="0 0 32 32">
+      <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.518 2l26.963 28"></path>
+      <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
+    </symbol>
 
+    <symbol id="icon-arrow" viewBox="0 0 26 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
+    </symbol>
   </defs>
 </svg>
