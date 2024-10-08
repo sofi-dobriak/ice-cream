@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@400,500,700&family=Titan+One&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Titan+One&display=swap"
         rel="stylesheet">
 
     <!-- Normalize -->
@@ -21,80 +21,84 @@
 </head>
 
 <body>
-    <header>
-        <!-- Header -->
-        <nav>
-            <a href="">
-                <img src="./images/logo.svg" alt="logo">
-            </a>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <nav class="header-nav">
+                <a class="logo" href="">
+                    <img src="./images/logo.svg" alt="logo">
+                </a>
 
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">How it's made?</a></li>
-                <li><a href="">Our products</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-
-            <button type="button">
-                Buy now
-                <svg>
-                    <use></use>
-                </svg>
-            </button>
-        </nav>
-
-        <!-- Burger button -->
-        <button class="mobile-menu-button-close" type="button">
-            <svg>
-                <use></use>
-            </svg>
-        </button>
-
-        <!-- Mobile menu -->
-        <div class="mobile-menu">
-            <button class="mobile-menu-button-close" type="button">
-                <svg>
-                    <use></use>
-                </svg>
-            </button>
-
-            <!-- Mobile menu links -->
-            <button type="button">
-                Buy now
-                <svg>
-                    <use></use>
-                </svg>
-            </button>
-
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">How it's made?</a></li>
-                    <li><a href="">Our products</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul class="header-list">
+                    <li class="header-item"><a class="header-link" href="">Home</a></li>
+                    <li class="header-item"><a class="header-link" href="">About us</a></li>
+                    <li class="header-item"><a class="header-link" href="">How it's made?</a></li>
+                    <li class="header-item"><a class="header-link" href="">Our products</a></li>
+                    <li class="header-item"><a class="header-link" href="">Contact</a></li>
                 </ul>
+
+                <button class="header-button" type="button">Buy now</button>
             </nav>
+
+
+            <!-- Burger button -->
+            <button class="burger-button" type="button">
+                <svg class="burger-button-icon" width="20" height="14">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu "> <!--is-open-->
+                <button class="mobile-menu-button-close" type="button">
+                    <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-close-button"></use>
+                    </svg>
+                </button>
+
+                <!-- Mobile menu links -->
+                <button class="mobile-menu-button" type="button">
+                    Buy now
+                    <svg class="mobile-menu-button-icon" id="arrow-right" width="8" height="10" viewBox="0 0 8 10"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.1069 1L6.36476 5L1.1069 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <nav>
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Home</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">About us</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">How it's made?</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Our products</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- Hero section -->
-        <section>
-            <div class="container">
-                <h1>ice cream made with <span>passion</span></h1>
-                <ul>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">How it's made?</a></li>
-                </ul>
-                <picture>
-                    <source srcset="" media="(min-width: 1198px)">
-                    <source srcset="" media="(min-width: 768px)">
-                    <source srcset="./images/mobile/hero-img.png 1x, ./images/mobile/hero-img@2x.png 2x"
-                        media="(max-width: 767px)">
-                    <img src="./images/mobile/hero-img.png" alt="Ice cream">
-                </picture>
+        <section class="hero-section">
+            <div class="container hero-section-container">
+                <div class="hero-content">
+                    <h1 class="hero-section-title">ice cream made with <span>passion</span></h1>
+                    <ul class="hero-section-list">
+                        <li class="hero-section-item"><a class="hero-section-link" href="">Products</a></li>
+                        <li class="hero-section-item"><a class="hero-section-link" href="">How it's made?</a></li>
+                    </ul>
+                </div>
+                <div class="hero-section-image-container">
+                    <picture>
+                        <source srcset="" media="(min-width: 1198px)">
+                        <source srcset="" media="(min-width: 768px)">
+                        <source srcset="./images/mobile/hero-img.png 1x, ./images/mobile/hero-img@2x.png 2x"
+                            media="(max-width: 767px)">
+                        <img class="hero-img" src="./images/mobile/hero-img.png" alt="Ice cream">
+                    </picture>
+                </div>
             </div>
         </section>
 
@@ -235,7 +239,7 @@
                         <img src="./images/mobile/collage-img.png" alt="Collage">
                     </picture>
 
-                    <img src="./images/user-photo.png" alt="Portrait of a smiling girl" width="85" height="85">
+                    <img src="./images/user-photo.png" alt="Portrait of a smiling girl" width="85">
                 </div>
 
                 <p>
