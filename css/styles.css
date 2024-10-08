@@ -287,26 +287,9 @@ input {
 
 .hero-img {
     position: absolute;
-    top: 32px;
+    top: 98px;
     right: 36px;
     z-index: 2;
     width: 170px;
     height: 410px;
-}
-
-.hero-section {
-    position: relative;
-}
-
-.hero-section::after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: -60px;
-    width: 346px;
-    height: 344px;
-    background-image: url(../images/mobile/hero-elipse.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1;
 }
