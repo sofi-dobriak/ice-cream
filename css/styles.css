@@ -6,11 +6,6 @@
 
 body {
     font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.6;
-    letter-spacing: 0.04em;
-    color: #000;
 }
 
 h1,
@@ -43,7 +38,6 @@ button {
 
 img {
     display: block;
-    width: 100%;
 }
 
 input {
@@ -107,17 +101,17 @@ input {
 .mobile-window {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     padding-top: 60px;
     z-index: 999;
 
     width: 250px;
     height: 508px;
 
-    box-shadow: 8px 0 20px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: -8px 0 20px 0 rgba(0, 0, 0, 0.25);
     background-color: #e17992;
 
-    transform: translateX(-100%);
+    transform: translateX(100%);
     pointer-events: none;
     transition: transform 0.2s;
 }
@@ -287,8 +281,106 @@ input {
 
 .hero-img {
     position: absolute;
-    top: 80px;
+    top: 67px;
     right: 0;
     z-index: 2;
     width: 290px;
+}
+
+
+/* === PRODUCT SECTION ===*/
+
+.product-section {
+    margin-bottom: 60px;
+}
+
+.product-title {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+    padding-top: 60px;
+    margin-bottom: 148px;
+}
+
+.product-title span {
+    font-size: 34px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d41443;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
+.product-article {
+    position: relative;
+    border-radius: 24px;
+    width: 280px;
+    height: 489px;
+}
+
+.ice-cream {
+    background-color: #ffb8ca;
+}
+
+.ice-coffee {
+    background-color: #f0d1a5;
+}
+
+.milkshake {
+    background-color: #c2e297;
+}
+
+.product-img {
+    position: absolute;
+    top: -144px;
+}
+
+.product-sub-title {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding-top: 160px;
+    margin-bottom: 32px;
+
+}
+
+.product-elipse-container {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-elipse {
+    max-width: 6px;
+    max-height: 6px;
+    fill: #fff;
+}
+
+.product-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    padding: 32px;
+    margin-bottom: 32px;
+}
+
+.product-arrow {
+    margin: 0 auto;
 }
