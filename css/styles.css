@@ -390,6 +390,8 @@ input {
 
 .made-section {
     background-color: #fff5f6;
+    padding-top: 60px;
+    padding-bottom: 66px;
 }
 
 .made-pre-text {
@@ -399,7 +401,6 @@ input {
     text-transform: uppercase;
     text-align: center;
     color: #ffa5ba;
-    padding-top: 60px;
     margin-bottom: 15px;
 }
 
@@ -471,10 +472,6 @@ input {
     gap: 32px;
 }
 
-.made-item {
-    margin-bottom: 66px;
-}
-
 .made-icon {
     fill: #ffa5ba;
 }
@@ -497,3 +494,6 @@ input {
     letter-spacing: 0.02em;
     color: #000;
 }
+
+
+/* === FEEDBACK SECTION ===*/
