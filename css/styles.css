@@ -1025,6 +1025,9 @@ input {
         line-height: 1.76;
     }
 
+    .product-text.ice-coffee {
+        margin-bottom: 58px;
+    }
 
     /* === MADE SECTION ===*/
 
