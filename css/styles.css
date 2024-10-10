@@ -1,9 +1,5 @@
 /* === GENERAL === */
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: "DM Sans", sans-serif;
 }
@@ -51,6 +47,20 @@ input {
     padding: 0 15px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* === HEADER === */
 
 .header {
@@ -88,7 +98,7 @@ input {
 .burger-button-icon {
     stroke-width: 1px;
     stroke: #d41443;
-    transition: stroke 0.2s;
+    transition: stroke 0.3s;
 }
 
 .burger-button-icon:hover,
@@ -113,7 +123,7 @@ input {
 
     transform: translateX(100%);
     pointer-events: none;
-    transition: transform 0.2s;
+    transition: transform 0.3s;
 }
 
 .mobile-window.is-open {
@@ -138,7 +148,7 @@ input {
 .mobile-close-icon {
     stroke-width: 1px;
     stroke: #fff;
-    transition: stroke 0.2s;
+    transition: stroke 0.3s;
 }
 
 .mobile-close-icon:hover,
@@ -158,14 +168,14 @@ input {
     text-align: center;
     color: #d41443;
 
-    border: 1px solid #fff;
+    border: none;
     border-radius: 62px;
     padding: 16px 54px;
 
     display: block;
     margin: 0 auto;
 
-    transition: border-color 0.2s;
+    transition: background-color 0.3s;
     cursor: pointer;
     margin-bottom: 20px;
 }
@@ -181,7 +191,7 @@ input {
 
 .mobile-button:hover,
 .mobile-button:focus {
-    border-color: #d41443;
+    background-color: #ecebeb;
 }
 
 /* Mobile links */
@@ -189,15 +199,14 @@ input {
 .mobile-item {
     border-top: 1px solid #e18298;
     border-bottom: 1px solid #e18298;
+    padding: 14px 20px;
 }
 
 .mobile-link {
     font-weight: 700;
     font-size: 14px;
     color: #fff;
-    padding: 14px 20px;
-
-    transition: color 0.2s;
+    transition: color 0.3s;
 }
 
 .mobile-list li:first-child .mobile-link {
@@ -254,7 +263,7 @@ input {
     text-align: center;
     padding: 8px 14px;
     border-radius: 20px;
-    transition: border-color 0.2s;
+    transition: border-color 0.3s, background-color 0.3s;
 }
 
 .hero-link-product {
@@ -266,7 +275,7 @@ input {
 .hero-link-made {
     color: #d41443;
     background-color: #fff;
-    border: 1px solid #fff;
+    border: none;
 }
 
 .hero-link-product:hover,
@@ -276,7 +285,7 @@ input {
 
 .hero-link-made:hover,
 .hero-link-made:focus {
-    border-color: #d41443;
+    background-color: #ecebeb;
 }
 
 .hero-img {
@@ -353,7 +362,6 @@ input {
     color: #fff;
     padding-top: 160px;
     margin-bottom: 32px;
-
 }
 
 .product-elipse-container {
@@ -468,11 +476,11 @@ input {
     text-align: center;
     color: #d41443;
     padding: 14px 46px 14px 36px;
-    border: 1px solid #fff;
+    border: none;
     background-color: #fff;
     border-radius: 62px;
     cursor: pointer;
-    transition: border-color 0.2s;
+    transition: background-color 0.3s;
     margin-bottom: 40px;
 }
 
@@ -487,7 +495,7 @@ input {
 
 .made-button:hover,
 .made-button:focus {
-    border-color: #d41443;
+    background-color: #ecebeb;
 }
 
 .made-list {
@@ -611,4 +619,190 @@ input {
 
 .feedback-big-elipse {
     fill: #d9d9d9;
+}
+
+
+/* === ADDRESS SECTION ===*/
+
+.address-section {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.address-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1150px;
+    background-color: #fff5f6;
+    z-index: -1;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.address-article {
+    border-radius: 24px;
+    box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+    background-color: #fff;
+    padding: 40px 32px;
+}
+
+.address-text {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 24px;
+}
+
+
+.address-lable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    height: 16px;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.address-lable.cafe {
+    width: 80px;
+    background-color: #f0d1a5;
+}
+
+.address-lable.foodtruck {
+    width: 130px;
+    background-color: #c2e297;
+}
+
+.address-city {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+}
+
+.address-description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #907e82;
+    margin-bottom: 24px;
+}
+
+.address-schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 24px;
+}
+
+.schedule-day {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    gap: 8px;
+}
+
+.schedule-time {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #ffa5ba;
+}
+
+.address-schedule-list li:last-child .schedule-time {
+    margin-bottom: 24px;
+}
+
+.address-contacts-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-contacts-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907e82;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.address-contacts-link:hover,
+.address-contacts-link:focus {
+    color: #d41443;
+}
+
+.address-locations-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.address-locations-item {
+    min-width: 184px;
+}
+
+.address-locations-link {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: 62px;
+    padding: 16px 32px;
+    transition: border-color 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.address-locations-link.locations {
+    color: #fff;
+    background-color: #d41443;
+    border: 1px solid #d41443;
+}
+
+.address-locations-link.franchise {
+    color: #d41443;
+    background-color: #fff;
+}
+
+.address-icon {
+    fill: none;
+    stroke-width: 2px;
+}
+
+.address-icon.locations {
+    stroke: #fff;
+}
+
+.address-icon.franchise {
+    stroke: #d41443;
+}
+
+.address-locations-link.locations:hover,
+.address-locations-link.locations:focus {
+    border-color: #fff;
+}
+
+.address-locations-link.franchise:hover,
+.address-locations-link.franchise:focus {
+    background-color: #ecebeb;
 }
