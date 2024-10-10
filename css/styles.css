@@ -291,7 +291,7 @@ input {
 /* === PRODUCT SECTION ===*/
 
 .product-section {
-    margin-bottom: 60px;
+    padding: 60px 0;
 }
 
 .product-title {
@@ -302,7 +302,6 @@ input {
     text-transform: uppercase;
     text-align: center;
     color: #ffa5ba;
-    padding-top: 60px;
     margin-bottom: 148px;
 }
 
@@ -415,21 +414,46 @@ input {
     margin-bottom: 32px;
 }
 
+.made-img-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.made-text-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.made-text-container::before {
+    position: absolute;
+    content: "";
+    top: 30%;
+    transform: translateY(-30%);
+    width: 280px;
+    height: 134px;
+    background-image: url(../images/mobile/decor-milk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
 .made-text {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
     letter-spacing: 0.04em;
-    max-width: 240px;
+    max-width: 222px;
+    z-index: 3;
 }
 
-.first {
-    color: #000;
+.first-p {
+    font-weight: 600;
     padding-top: 40px;
     margin-bottom: 18px;
 }
 
-.second {
+.second-p {
     color: #907e82;
     margin-bottom: 20px;
 }
@@ -497,3 +521,94 @@ input {
 
 
 /* === FEEDBACK SECTION ===*/
+
+.feedback-section {
+    padding-bottom: 60px;
+}
+
+.feedback-collage {
+    margin: -26px auto 60px;
+    width: 100vh;
+    max-width: 320px;
+}
+
+.feedback-img {
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.feedback-text-container {
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+    padding: 48px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.feedback-text-container::before {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 54px;
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/quotes.png);
+    z-index: 1;
+}
+
+.feedback-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.6;
+    letter-spacing: 0.04em;
+    text-align: center;
+    max-width: 156px;
+    z-index: 2;
+}
+
+.mobile-feedback-text span {
+    display: block;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.tablet-feedback-text,
+.desktop-feedback-text {
+    display: none;
+}
+
+.feedback-elipse-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-elipse {
+    fill: #c7133e;
+}
+
+.feedback-author {
+    padding-top: 16px;
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+}
+
+.icons-feedback-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.feedback-home {
+    fill: #c7133e;
+}
+
+.feedback-big-elipse {
+    fill: #d9d9d9;
+}
