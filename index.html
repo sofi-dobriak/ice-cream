@@ -30,11 +30,11 @@
                 </a>
 
                 <ul class="header-list">
-                    <li class="header-item"><a class="header-link" href="">Home</a></li>
+                    <li class="header-item"><a class="header-link" href="./index.html">Home</a></li>
                     <li class="header-item"><a class="header-link" href="">About us</a></li>
-                    <li class="header-item"><a class="header-link" href="">How it's made?</a></li>
-                    <li class="header-item"><a class="header-link" href="">Our products</a></li>
-                    <li class="header-item"><a class="header-link" href="">Contact</a></li>
+                    <li class="header-item"><a class="header-link" href="#made">How it's made?</a></li>
+                    <li class="header-item"><a class="header-link" href="#products">Our products</a></li>
+                    <li class="header-item"><a class="header-link" href="#contacts">Contact</a></li>
                 </ul>
 
                 <button class="header-button" type="button">Buy now</button>
@@ -42,15 +42,15 @@
 
 
             <!-- Burger button -->
-            <button class="burger-button" type="button">
+            <button class="burger-button mobile-btn-open" type="button">
                 <svg class="burger-button-icon" width="20" height="14">
                     <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
             </button>
 
             <!-- Modal window -->
-            <div class="mobile-window "> <!--is-open-->
-                <button class="mobile-close">
+            <div class="mobile-window"> <!--is-open-->
+                <button class="mobile-close mobile-btn-close">
                     <svg class="mobile-close-icon" width="14" height="14">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
@@ -65,11 +65,11 @@
 
                 <nav>
                     <ul class="mobile-list">
-                        <li class="mobile-item"><a href="" class="mobile-link">Home</a></li>
+                        <li class="mobile-item"><a href="./index.html" class="mobile-link">Home</a></li>
                         <li class="mobile-item"><a href="" class="mobile-link">About us</a></li>
-                        <li class="mobile-item"><a href="" class="mobile-link">How it's made?</a></li>
-                        <li class="mobile-item"><a href="" class="mobile-link">Our products</a></li>
-                        <li class="mobile-item"><a href="" class="mobile-link">Contact</a></li>
+                        <li class="mobile-item"><a href="#made" class="mobile-link">How it's made?</a></li>
+                        <li class="mobile-item"><a href="#products" class="mobile-link">Our products</a></li>
+                        <li class="mobile-item"><a href="#contacts" class="mobile-link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -82,8 +82,8 @@
                 <div class="title-link-container">
                     <h1 class="hero-title">ice cream made with <span>passion</span></h1>
                     <ul class="hero-list">
-                        <li class="hero-item"><a href="" class="hero-link-product">Products</a></li>
-                        <li class="hero-item"><a href="" class="hero-link-made">How it's made?</a></li>
+                        <li class="hero-item"><a href="#products" class="hero-link-product">Products</a></li>
+                        <li class="hero-item"><a href="#made" class="hero-link-made">How it's made?</a></li>
                     </ul>
                 </div>
                 <div class="hero-img-container">
@@ -99,7 +99,7 @@
         </section>
 
         <!-- Product -->
-        <section class="product-section">
+        <section class="product-section" id="products">
             <div class="container">
                 <h2 class="product-title">100% natural <span>products</span></h2>
                 <ul class="product-list">
@@ -161,8 +161,7 @@
 
                             <p class="product-text">
                                 Refresh and energize with our perfectly brewed iced coffee, made with high-quality beans
-                                and
-                                served over ice.
+                                and served over ice.
                             </p>
 
                             <img class="product-arrow" src="./images/arrow-right.png" alt="" width="40px" height="40px">
@@ -193,8 +192,7 @@
 
                             <p class="product-text">
                                 Satisfy your sweet tooth with our thick, made with premium ice cream, topped with
-                                whipped
-                                cream and your favorite toppings.
+                                whipped cream and your favorite toppings.
                             </p>
 
                             <img class="product-arrow" src="./images/arrow-right.png" alt="" width="40px" height="40px">
@@ -205,7 +203,7 @@
         </section>
 
         <!-- How it's made -->
-        <section class="made-section">
+        <section class="made-section" id="made">
             <div class="container">
                 <p class="made-pre-text">tradition and love</p>
                 <h2 class="made-title">how it's made?</h2>
@@ -222,22 +220,13 @@
                     <div class="made-text-container">
                         <p class="made-text first-p">
                             Ice is a place where you will become not only a little happier, but also healthier. Health
-                            is
-                            the
-                            main
-                            value for us, and we follow it when creating our handmade desserts.
+                            is the main value for us, and we follow it when creating our handmade desserts.
                         </p>
 
                         <p class="made-text second-p">
                             We use traditional recipes and 100% natural ingredients. Our products are so natural that
-                            they
-                            can
-                            be
-                            given to children from the age of three years. Sweets lovers can expect 55 types of ice
-                            cream,
-                            15
-                            types
-                            of coffee and 23 milkshakes.
+                            they can be given to children from the age of three years. Sweets lovers can expect 55 types
+                            of ice cream, 15 types of coffee and 23 milkshakes.
                         </p>
 
                         <div class="made-button-container">
@@ -349,7 +338,7 @@
         </section>
 
         <!-- Address -->
-        <section class="address-section">
+        <section class="address-section" id="contacts">
             <h2 class="visually-hidden">Address</h2>
             <div class="container">
                 <ul class="address-list">
@@ -463,9 +452,50 @@
                         </a>
                     </li>
                 </ul>
+
+                <p class="address-text-made">homemade ice cream made</p>
+                <p class="address-text-passion">with passion</p>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="social-link" href="">
+                            <svg class="social-link-icon" width="32" height="32">
+                                <use href="./images/icons.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="">
+                            <svg class="social-link-icon" width="32" height="32">
+                                <use href="./images/icons.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="">
+                            <svg class="social-link-icon" width="32" height="32">
+                                <use href="./images/icons.svg#icon-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="phone-text">
+                    Feel free to contact
+                    <a class="phone-link" href="+61(0)383766284">+61 (0) 383 766 284</a>
+                </p>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2022 - IceCream. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

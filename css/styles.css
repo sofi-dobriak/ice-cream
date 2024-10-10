@@ -1,4 +1,7 @@
 /* === GENERAL === */
+* {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "DM Sans", sans-serif;
@@ -627,6 +630,7 @@ input {
 .address-section {
     position: relative;
     padding-bottom: 40px;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .address-section::after {
@@ -751,6 +755,7 @@ input {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-bottom: 40px;
 }
 
 .address-locations-item {
@@ -805,4 +810,88 @@ input {
 .address-locations-link.franchise:hover,
 .address-locations-link.franchise:focus {
     background-color: #ecebeb;
+}
+
+.address-text-made {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    margin-bottom: 16px;
+    max-width: 218px;
+}
+
+.address-text-passion {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    margin-bottom: 40px;
+    max-width: 200px;
+}
+
+.social-list {
+    display: flex;
+    gap: 28px;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: #fea5bb;
+    transition: background-color 0.3s;
+}
+
+.social-link-icon {
+    fill: #fff
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: #d41443;
+}
+
+.phone-text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: right;
+    color: #000;
+
+}
+
+.phone-link {
+    color: #d41443;
+    transition: color 0.3s;
+}
+
+.phone-link:hover,
+.phone-link:focus {
+    color: #fea5bb;
+}
+
+
+/* === FOOTER ===*/
+
+.footer {
+    padding: 10px;
+    background-color: #fff5f6;
+}
+
+.footer-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    color: #907e82;
+    max-width: 136px;
+    margin: 0 auto;
 }
