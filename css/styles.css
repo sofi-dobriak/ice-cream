@@ -387,7 +387,9 @@ input {
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    padding: 32px;
+    margin-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
     margin-bottom: 32px;
 }
 
@@ -411,7 +413,7 @@ input {
     text-transform: uppercase;
     text-align: center;
     color: #ffa5ba;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .made-title {
@@ -493,7 +495,7 @@ input {
     stroke: #d41443;
     fill: none;
     right: 164px;
-    top: 19px;
+    top: 18px;
 }
 
 .made-button:hover,
@@ -639,7 +641,7 @@ input {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 1150px;
+    height: 1480px;
     background-color: #fff5f6;
     z-index: -1;
 }
@@ -812,13 +814,25 @@ input {
     background-color: #ecebeb;
 }
 
+.passion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .address-text-made {
     font-family: "Titan One", sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
     color: #ffa5ba;
-    margin-bottom: 16px;
     max-width: 218px;
 }
 
@@ -829,7 +843,6 @@ input {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
-    margin-bottom: 40px;
     max-width: 200px;
 }
 
@@ -837,7 +850,6 @@ input {
     display: flex;
     gap: 28px;
     justify-content: flex-end;
-    margin-bottom: 40px;
 }
 
 .social-link {
@@ -894,4 +906,310 @@ input {
     color: #907e82;
     max-width: 136px;
     margin: 0 auto;
+}
+
+
+/* === MEDIA QUERIES === */
+
+/* === TABLET === */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    /* === HEADER === */
+
+    .header-container {
+        padding: 32px;
+    }
+
+    .burger-header-button {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .header-button-container {
+        position: relative;
+    }
+
+    .header-button {
+        display: flex;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        color: #d41443;
+        padding: 16px 36px;
+        width: 160px;
+
+        border: none;
+        border-radius: 62px;
+        background-color: #fff;
+
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .header-button:hover,
+    .header-button:focus {
+        background-color: #ecebeb;
+    }
+
+    .header-button-arrow {
+        position: absolute;
+        fill: none;
+        stroke-width: 2px;
+        stroke: #d41443;
+        top: 20px;
+        left: 106px;
+    }
+
+    /* === MOBILE WINDOW === */
+
+    .mobile-window {
+        width: 254px;
+        height: 1020px;
+    }
+
+    /* === HERO SECTION ===*/
+
+    .hero-title {
+        padding-top: 20px;
+    }
+
+    .hero-img {
+        position: absolute;
+        top: 104px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        width: 290px;
+    }
+
+
+    /* === PRODUCT SECTION ===*/
+
+    .product-title {
+        font-size: 26px;
+        max-width: 284px;
+        margin: 0 auto;
+        margin-bottom: 158px;
+    }
+
+    .product-title span {
+        font-size: 48px;
+    }
+
+    .product-list {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .product-item {
+        flex: calc((100% - 32px) / 3);
+    }
+
+    .product-article {
+        width: 224px;
+    }
+
+    .product-sub-title {
+        padding-top: 118px;
+    }
+
+    .product-text {
+        padding-left: 18px;
+        padding-right: 18px;
+        line-height: 1.76;
+    }
+
+
+    /* === MADE SECTION ===*/
+
+    .made-section {
+        padding-bottom: 204px;
+    }
+
+    .made-pre-text {
+        font-size: 26px;
+    }
+
+    .made-title {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+
+    .made-img-text-container {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .made-text-container::before {
+        display: none;
+    }
+
+    .made-text {
+        max-width: 334px;
+    }
+
+    .made-button {
+        margin-bottom: 50px;
+    }
+
+    .made-button-arrow {
+        right: 208px;
+    }
+
+    .made-list {
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .made-item {
+        flex: calc((100% - 36px) / 3);
+    }
+
+    .made-number {
+        padding-top: 14px;
+        margin-bottom: 36px;
+    }
+
+    .made-description {
+        font-size: 14px;
+        line-height: 1.74;
+    }
+
+
+    /* === FEEDBACK SECTION ===*/
+
+    .feedback-section {
+        padding-bottom: 120px;
+    }
+
+    .feedback-collage {
+        margin: -190px auto 60px;
+        min-width: 768px;
+    }
+
+    .feedback-img {
+        margin-bottom: 20px;
+    }
+
+    .feedback-text-container {
+        padding: 36px 64px;
+        width: 620px;
+        height: 164px;
+        margin: 0 auto 4px;
+    }
+
+    .feedback-text-container::before {
+        top: 20px;
+        left: 10px;
+    }
+
+    .mobile-feedback-text {
+        display: none;
+    }
+
+    .tablet-feedback-text {
+        display: flex;
+        flex-direction: column;
+        max-width: 620px;
+        font-size: 14px;
+        line-height: 2.14;
+    }
+
+    .tablet-feedback-text span {
+        display: block;
+        border-bottom: 2px solid #e1e1e1;
+    }
+
+    .feedback-author {
+        margin-bottom: 32px;
+    }
+
+
+    /* === ADDRESS SECTION ===*/
+
+    .address-section::after {
+        height: 564px;
+    }
+
+    .address-list {
+        flex-direction: row;
+        margin-bottom: 60px;
+    }
+
+    .address-item {
+        flex: calc((100% - 64px) / 3)
+    }
+
+    .address-city {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .address-description {
+        font-size: 14px;
+        line-height: 1.66;
+        margin-bottom: 32px;
+    }
+
+    .schedule-day {
+        font-size: 14px;
+    }
+
+    .schedule-time {
+        font-size: 14px;
+    }
+
+    .address-contacts-link {
+        font-size: 14px;
+        line-height: 1.83;
+    }
+
+    .address-locations-list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .address-text-made {
+        font-size: 26px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        max-width: 410px;
+    }
+
+    .passion-social-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .passion-container {
+        gap: 12px;
+        margin-bottom: 0;
+    }
+
+    .address-text-passion {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+    }
+
+    .phone-text {
+        font-size: 14px;
+    }
+
+
+    /* === FOOTER ===*/
+
+    .footer-text {
+        max-width: 282px;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+    }
 }

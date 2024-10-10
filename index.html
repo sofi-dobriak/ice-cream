@@ -36,17 +36,26 @@
                     <li class="header-item"><a class="header-link" href="#products">Our products</a></li>
                     <li class="header-item"><a class="header-link" href="#contacts">Contact</a></li>
                 </ul>
-
-                <button class="header-button" type="button">Buy now</button>
             </nav>
 
 
-            <!-- Burger button -->
-            <button class="burger-button mobile-btn-open" type="button">
-                <svg class="burger-button-icon" width="20" height="14">
-                    <use href="./images/icons.svg#icon-burger"></use>
-                </svg>
-            </button>
+            <div class="burger-header-button">
+                <!-- Burger button -->
+                <button class="burger-button mobile-btn-open" type="button">
+                    <svg class="burger-button-icon" width="20" height="14">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
+
+                <div class="header-button-container">
+                    <button class="header-button" type="button">
+                        Buy now
+                        <svg class="header-button-arrow" width="8" height="10">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
 
             <!-- Modal window -->
             <div class="mobile-window"> <!--is-open-->
@@ -89,7 +98,8 @@
                 <div class="hero-img-container">
                     <picture>
                         <source srcset="" media="(min-width: 1260)">
-                        <source srcset="" media="(min-width: 768px)">
+                        <source srcset="./images/tablet/hero-img.png 1x, ./images/tablet/hero-img@2x.png 2x"
+                            media="(min-width: 768px)">
                         <source srcset="./images/mobile/hero-img.png 1x, ./images/mobile/hero-img@2x.png 2x"
                             media="(min-width: 767px)">
                         <img class="hero-img" src="./images/mobile/hero-img.png" alt="Ice cream">
@@ -107,7 +117,8 @@
                         <article class="product-article ice-cream">
                             <picture>
                                 <source srcset="" media="(min-width: 1260)">
-                                <source srcset="" media="(min-width: 768px)">
+                                <source srcset="./images/tablet/ice-cream.png 1x, ./images/tablet/ice-cream@2x.png 2x"
+                                    media="(min-width: 768px)">
                                 <source srcset="./images/mobile/ice-cream.png 1x, ./images/mobile/ice-cream@2x.png 2x"
                                     media="(min-width: 767px)">
                                 <img src="./images/mobile/ice-cream.png" alt="Ice cream" class="product-img">
@@ -139,7 +150,8 @@
                         <article class="product-article ice-coffee">
                             <picture>
                                 <source srcset="" media="(min-width: 1260)">
-                                <source srcset="" media="(min-width: 768px)">
+                                <source srcset="./images/tablet/ice-coffee.png 1x, ./images/tablet/ice-coffee@2x.png 2x"
+                                    media="(min-width: 768px)">
                                 <source srcset="./images/mobile/ice-coffee.png 1x, ./images/mobile/ice-coffee@2x.png 2x"
                                     media="(min-width: 767px)">
                                 <img src="./images/mobile/ice-coffee.png" alt="Ice coffee" class="product-img">
@@ -171,7 +183,8 @@
                         <article class="product-article milkshake">
                             <picture>
                                 <source srcset="" media="(min-width: 1260)">
-                                <source srcset="" media="(min-width: 768px)">
+                                <source srcset="./images/tablet/milkshakes.png 1x, ./images/tablet/milkshakes@2x.png 2x"
+                                    media="(min-width: 768px)">
                                 <source srcset="./images/mobile/milkshakes.png 1x, ./images/mobile/milkshakes@2x.png 2x"
                                     media="(min-width: 767px)">
                                 <img src="./images/mobile/milkshakes.png" alt="Milkshake" class="product-img">
@@ -211,7 +224,8 @@
                 <div class="made-img-text-container">
                     <picture>
                         <source srcset="" media="(min-width: 1260)">
-                        <source srcset="" media="(min-width: 768px)">
+                        <source srcset="./images/tablet/made-img.png 1x, ./images/tablet/made-img@2x.png 2x"
+                            media="(min-width: 768px)">
                         <source srcset="./images/mobile/made-img.png 1x, ./images/mobile/made-img@2x.png 2x"
                             media="(min-width: 767px)">
                         <img src="./images/mobile/made-img.png" alt="A cow">
@@ -240,7 +254,7 @@
 
                 <ul class="made-list">
                     <li class="made-item">
-                        <svg class="made-icon" width="32" height="50">
+                        <svg class="made-icon" width="50" height="50">
                             <use href="./images/icons.svg#icon-bucket"></use>
                         </svg>
                         <p class="made-number">721</p>
@@ -258,7 +272,7 @@
                         </p>
                     </li>
                     <li class="made-item">
-                        <svg class="made-icon" width="46" height="52">
+                        <svg class="made-icon" width="50" height="50">
                             <use href="./images/icons.svg#icon-heart"></use>
                         </svg>
                         <p class="made-number">84</p>
@@ -276,7 +290,8 @@
             <h2 class="visually-hidden">Feedback</h2>
             <picture>
                 <source srcset="" media="(min-width: 1260)">
-                <source srcset="" media="(min-width: 768px)">
+                <source srcset="./images/tablet/collage-img.png 1x, ./images/tablet/collage-img@2x.png 2x"
+                    media="(min-width: 768px)">
                 <source srcset="./images/mobile/collage-img.png 1x, ./images/mobile/collage-img@2x.png 2x"
                     media="(min-width: 767px)">
                 <img class="feedback-collage" src="./images/mobile/collage-img.png" alt="A collage from clients">
@@ -375,7 +390,7 @@
                     <li class="address-item">
                         <article class="address-article">
                             <div class="address-text">
-                                <p class="address-lable foodtruck">FOODTRUCK</p>
+                                <p class="address-lable foodtruck">FOOD TRUCK</p>
                                 <h3 class="address-city">Los Angeles</h3>
                                 <p class="address-description">
                                     Fusion cuisine and refreshing ice cream made with passion.
@@ -453,37 +468,43 @@
                     </li>
                 </ul>
 
-                <p class="address-text-made">homemade ice cream made</p>
-                <p class="address-text-passion">with passion</p>
+                <div class="passion-social-container">
+                    <div class="passion-container">
+                        <p class="address-text-made">homemade ice cream made</p>
+                        <p class="address-text-passion">with passion</p>
+                    </div>
 
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a class="social-link" href="">
-                            <svg class="social-link-icon" width="32" height="32">
-                                <use href="./images/icons.svg#icon-github"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link" href="">
-                            <svg class="social-link-icon" width="32" height="32">
-                                <use href="./images/icons.svg#icon-telegram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link" href="">
-                            <svg class="social-link-icon" width="32" height="32">
-                                <use href="./images/icons.svg#icon-fb"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                    <div class="social-container">
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a class="social-link" href="">
+                                    <svg class="social-link-icon" width="32" height="32">
+                                        <use href="./images/icons.svg#icon-github"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link" href="">
+                                    <svg class="social-link-icon" width="32" height="32">
+                                        <use href="./images/icons.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link" href="">
+                                    <svg class="social-link-icon" width="32" height="32">
+                                        <use href="./images/icons.svg#icon-fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
 
-                <p class="phone-text">
-                    Feel free to contact
-                    <a class="phone-link" href="+61(0)383766284">+61 (0) 383 766 284</a>
-                </p>
+                        <p class="phone-text">
+                            Feel free to contact
+                            <a class="phone-link" href="+61(0)383766284">+61 (0) 383 766 284</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
