@@ -1159,11 +1159,18 @@ input {
     }
 
     .made-text {
+        font-size: 14px;
+        line-height: 1.94;
         max-width: 334px;
     }
 
     .made-button {
         margin-bottom: 50px;
+    }
+
+    .first-p {
+        font-size: 14px;
+        line-height: 1.74;
     }
 
     .made-button-arrow {
@@ -1247,11 +1254,12 @@ input {
     }
 
     .address-section::after {
-        height: 564px;
+        height: 560px;
     }
 
     .address-list {
         flex-direction: row;
+        gap: 32px;
         margin-bottom: 60px;
     }
 
@@ -1268,6 +1276,7 @@ input {
         font-size: 14px;
         line-height: 1.66;
         margin-bottom: 32px;
+        letter-spacing: 0;
     }
 
     .schedule-day {
@@ -1397,7 +1406,7 @@ input {
     }
 
     .hero-img {
-        top: 52px;
+        top: 40px;
         left: 72%;
         transform: translateX(-72%);
         width: 500px;
@@ -1409,7 +1418,12 @@ input {
 
     .hero-milk-img {
         margin-bottom: 60px;
-        width: 213px;
+    }
+
+    .hero-milk-text {
+        font-size: 14px;
+        line-height: 1.4;
+        max-width: 200px;
     }
 
     .hero-milk-arrow {
@@ -1418,8 +1432,11 @@ input {
     }
 
     .hero-girl-img {
-        width: 304px;
-        bottom: -36px;
+        bottom: -35px;
+    }
+
+    .hero-stat-list {
+        padding-right: 16px;
     }
 
     .hero-stat-item::after {
@@ -1436,5 +1453,227 @@ input {
     .hero-stat-desc {
 
         font-size: 14px;
+    }
+
+    /* === PRODUCT SECTION ===*/
+
+    .product-title {
+        font-size: 30px;
+        letter-spacing: 0.04em;
+        margin-bottom: 280px;
+    }
+
+    .product-title span {
+        font-size: 58px;
+        letter-spacing: 0.06em;
+    }
+
+    .product-article {
+        width: 368px;
+    }
+
+    .product-list {
+        gap: 32px;
+    }
+
+    .product-item {
+        flex: calc((100% - 64px) / 3);
+    }
+
+    .product-img {
+        top: -260px;
+    }
+
+    .product-sub-title {
+        padding-top: 165px;
+    }
+
+    .product-text {
+        padding: 0 32px;
+        font-size: 16px;
+        line-height: 1.76;
+    }
+
+    .product-text.ice-coffee {
+        margin-bottom: 36px;
+    }
+
+
+    /* === MADE SECTION ===*/
+
+    .made-section {
+        padding-bottom: 182px;
+    }
+
+    .made-pre-text {
+        font-size: 30px;
+        letter-spacing: 0.04em;
+    }
+
+    .made-title {
+        font-size: 58px;
+        letter-spacing: 0.06em;
+        margin-bottom: 60px;
+    }
+
+    .made-img-text-container {
+        align-items: center;
+        gap: 100px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .made-img-text-container::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 1200px;
+        height: 520px;
+        background-image: url(../images/desktop/decor-milk.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+    }
+
+    .made-text {
+        max-width: 400px;
+    }
+
+    .first-p {
+        font-size: 16px;
+        line-height: 1.76;
+    }
+
+    .made-button {
+        margin-bottom: 0;
+    }
+
+    .made-button-arrow {
+        right: 268px;
+    }
+
+    .made-list {
+        align-items: flex-start;
+        gap: 80px;
+    }
+
+    .made-item {
+        flex: calc((100% - 160px) / 3);
+    }
+
+    .made-number {
+        padding-top: 40px;
+        margin-bottom: 16px;
+    }
+
+    .made-description {
+        font-size: 16px;
+        line-height: 1.76;
+    }
+
+
+    /* === FEEDBACK SECTION ===*/
+
+    .feedback-section {
+        padding-bottom: 120px;
+    }
+
+    .feedback-collage {
+        margin: -104px auto 120px;
+        min-width: 1198px;
+    }
+
+    .feedback-img {
+        margin-bottom: 16px;
+    }
+
+    .feedback-text-container {
+        padding: 48px 108px;
+        width: 968px;
+        height: 138px;
+    }
+
+    .feedback-text-container::before {
+        top: 32px;
+        left: 78px;
+    }
+
+    .tablet-feedback-text {
+        display: none;
+    }
+
+    .desktop-feedback-text {
+        display: flex;
+        flex-direction: column;
+        max-width: 968px;
+        font-size: 16px;
+        line-height: 1.86;
+    }
+
+    .desktop-feedback-text span {
+        display: block;
+        border-bottom: 2px solid #e1e1e1;
+    }
+
+
+    /* === ADDRESS SECTION ===*/
+
+    .address-section {
+        padding-bottom: 60px;
+    }
+
+    .address-section::after {
+        height: 824px;
+    }
+
+    .address-article {
+        padding: 40px;
+    }
+
+    .address-city {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .address-description {
+        font-size: 16px;
+        line-height: 1.83;
+    }
+
+    .schedule-day {
+        font-size: 16px;
+        letter-spacing: 0.04em;
+    }
+
+    .schedule-time {
+        font-size: 16px;
+    }
+
+    .address-contacts-link {
+        font-size: 16px;
+    }
+
+    .address-locations-list {
+        margin-bottom: 120px;
+    }
+
+    .address-text-made {
+        font-size: 30px;
+        max-width: 472px;
+    }
+
+    .passion-container {
+        gap: 16px;
+    }
+
+    .address-text-passion {
+        font-size: 58px;
+        max-width: 480px;
+    }
+
+    .phone-text {
+        font-size: 16px;
+        letter-spacing: 0.02em;
     }
 }
