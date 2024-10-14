@@ -481,6 +481,7 @@ input {
 
 .made-button-container {
     position: relative;
+    z-index: 2;
 }
 
 .made-button {
@@ -919,6 +920,12 @@ input {
 
 
 /* === MEDIA QUERIES === */
+
+@media screen and (min-resolution: 192dpi) {
+    .made-img-text-container::before {
+        background-image: url(../images/mobile/decor-milk@2x.png);
+    }
+}
 
 /* === TABLET === */
 
@@ -1407,8 +1414,8 @@ input {
 
     .hero-img {
         top: 40px;
-        left: 72%;
-        transform: translateX(-72%);
+        left: 60%;
+        transform: translateX(-60%);
         width: 500px;
     }
 
@@ -1570,6 +1577,12 @@ input {
     .made-description {
         font-size: 16px;
         line-height: 1.76;
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .made-img-text-container::before {
+            background-image: url(../images/desktop/decor-milk@2x.png);
+        }
     }
 
 
