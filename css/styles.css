@@ -181,15 +181,16 @@ input {
     transition: background-color 0.3s;
     cursor: pointer;
     margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
 }
 
 .mobile-button-arrow {
-    position: absolute;
     stroke-width: 2px;
     stroke: #d41443;
     fill: none;
-    right: 70px;
-    top: 21px;
+    margin-left: 28px;
 }
 
 .mobile-button:hover,
@@ -253,10 +254,7 @@ input {
 .hero-list {
     display: flex;
     gap: 8px;
-}
-
-.hero-item {
-    margin-bottom: 158px;
+    padding-bottom: 158px;
 }
 
 .hero-milk-img,
@@ -339,11 +337,12 @@ input {
     gap: 140px;
 }
 
-.product-article {
+.product-item {
     position: relative;
     border-radius: 24px;
     width: 280px;
     height: 489px;
+    padding: 0 32px 40px;
 }
 
 .ice-cream {
@@ -361,6 +360,7 @@ input {
 .product-img {
     position: absolute;
     top: -144px;
+    left: 0;
 }
 
 .product-sub-title {
@@ -380,6 +380,7 @@ input {
     gap: 4px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 32px;
 }
 
 .product-elipse {
@@ -395,9 +396,6 @@ input {
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    margin-top: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
     margin-bottom: 32px;
 }
 
@@ -459,6 +457,10 @@ input {
     z-index: 1;
 }
 
+.img-made {
+    margin-bottom: 40px;
+}
+
 .made-text {
     font-weight: 500;
     font-size: 12px;
@@ -470,7 +472,6 @@ input {
 
 .first-p {
     font-weight: 600;
-    padding-top: 40px;
     margin-bottom: 18px;
 }
 
@@ -489,22 +490,25 @@ input {
     font-size: 14px;
     text-align: center;
     color: #d41443;
-    padding: 14px 46px 14px 36px;
     border: none;
     background-color: #fff;
     border-radius: 62px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 176px;
+    height: 44px;
 }
 
 .made-button-arrow {
-    position: absolute;
     stroke-width: 2px;
     stroke: #d41443;
     fill: none;
-    right: 164px;
-    top: 18px;
+    margin-left: 28px;
 }
 
 .made-button:hover,
@@ -529,7 +533,7 @@ input {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
-    padding-top: 16px;
+    margin-top: 16px;
     margin-bottom: 22px;
 }
 
@@ -604,6 +608,7 @@ input {
     gap: 10px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 16px;
 }
 
 .feedback-elipse {
@@ -611,7 +616,6 @@ input {
 }
 
 .feedback-author {
-    padding-top: 16px;
     margin-bottom: 16px;
 
     font-weight: 500;
@@ -662,7 +666,7 @@ input {
     margin-bottom: 32px;
 }
 
-.address-article {
+.address-item {
     border-radius: 24px;
     box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
     background-color: #fff;
@@ -924,6 +928,7 @@ input {
 @media screen and (min-resolution: 192dpi) {
     .made-img-text-container::before {
         background-image: url(../images/mobile/decor-milk@2x.png);
+        position: relative;
     }
 }
 
@@ -953,12 +958,15 @@ input {
 
     .header-button {
         display: flex;
+        align-items: center;
+        justify-content: center;
+
         font-weight: 700;
         font-size: 16px;
         text-align: center;
         color: #d41443;
-        padding: 16px 36px;
-        width: 160px;
+        min-width: 160px;
+        height: 44px;
 
         border: none;
         border-radius: 62px;
@@ -974,12 +982,10 @@ input {
     }
 
     .header-button-arrow {
-        position: absolute;
         fill: none;
         stroke-width: 2px;
         stroke: #d41443;
-        top: 20px;
-        left: 106px;
+        margin-left: 28px;
     }
 
     /* === MOBILE WINDOW === */
@@ -1007,8 +1013,8 @@ input {
         width: 335px;
     }
 
-    .hero-item {
-        margin-bottom: 20px;
+    .hero-list {
+        padding-bottom: 20px;
     }
 
     .hero-title-stat-container {
@@ -1131,12 +1137,6 @@ input {
         padding-top: 118px;
     }
 
-    .product-text {
-        padding-left: 18px;
-        padding-right: 18px;
-        line-height: 1.76;
-    }
-
     .product-text.ice-coffee {
         margin-bottom: 57px;
     }
@@ -1195,7 +1195,6 @@ input {
     }
 
     .made-number {
-        padding-top: 14px;
         margin-bottom: 36px;
     }
 
@@ -1401,7 +1400,7 @@ input {
     /* === HERO SECTION ===*/
 
     .hero-title {
-        padding-top: 8px;
+        margin-top: 8px;
         font-size: 38px;
         max-width: 277px;
         margin-bottom: 24px;
@@ -1413,7 +1412,7 @@ input {
     }
 
     .hero-img {
-        top: 40px;
+        top: 60px;
         left: 60%;
         transform: translateX(-60%);
         width: 500px;
@@ -1496,7 +1495,6 @@ input {
     }
 
     .product-text {
-        padding: 0 32px;
         font-size: 16px;
         line-height: 1.76;
     }
@@ -1554,6 +1552,8 @@ input {
 
     .made-button {
         margin-bottom: 0;
+        position: relative;
+        z-index: 1;
     }
 
     .made-button-arrow {
@@ -1570,7 +1570,7 @@ input {
     }
 
     .made-number {
-        padding-top: 40px;
+        margin-top: 40px;
         margin-bottom: 16px;
     }
 

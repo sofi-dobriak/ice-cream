@@ -47,14 +47,13 @@
                     </svg>
                 </button>
 
-                <div class="header-button-container">
-                    <button class="header-button" type="button">
-                        Buy now
-                        <svg class="header-button-arrow" width="8" height="10">
-                            <use href="./images/icons.svg#icon-arrow"></use>
-                        </svg>
-                    </button>
-                </div>
+
+                <button class="header-button" type="button">
+                    Buy now
+                    <svg class="header-button-arrow" width="8" height="10">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
             </div>
 
             <!-- Modal window -->
@@ -65,12 +64,12 @@
                     </svg>
                 </button>
 
-                <div class="mobile-button-container">
-                    <button class="mobile-button" type="button">Buy now</button>
+                <button class="mobile-button" type="button">
+                    Buy now
                     <svg class="mobile-button-arrow" width="8" height="10">
                         <use href="./images/icons.svg#icon-arrow"></use>
                     </svg>
-                </div>
+                </button>
 
                 <nav>
                     <ul class="mobile-list">
@@ -123,7 +122,9 @@
                             <div class="text-arrow-container">
                                 <p class="hero-milk-text">Indulge in a scoop of ice cream made with passion and treat
                                     your taste buds to an unforgettable experience!</p>
-                                <img class="hero-milk-arrow" src="./images/arrow-right.png" alt="Arrow icon">
+                                <a href="#made">
+                                    <img class="hero-milk-arrow" src="./images/arrow-right.png" alt="Arrow icon">
+                                </a>
                             </div>
                         </div>
 
@@ -156,111 +157,109 @@
             <div class="container">
                 <h2 class="product-title">100% natural <span>products</span></h2>
                 <ul class="product-list">
-                    <li class="product-item">
-                        <article class="product-article ice-cream">
-                            <picture>
-                                <source srcset="./images/desktop/ice-cream.png 1x, ./images/desktop/ice-cream@2x.png 2x"
-                                    media="(min-width: 1198px)">
-                                <source srcset="./images/tablet/ice-cream.png 1x, ./images/tablet/ice-cream@2x.png 2x"
-                                    media="(min-width: 768px)">
-                                <source srcset="./images/mobile/ice-cream.png 1x, ./images/mobile/ice-cream@2x.png 2x"
-                                    media="(max-width: 767px)">
-                                <img src="./images/mobile/ice-cream.png" alt="Ice cream" class="product-img">
-                            </picture>
+                    <li class="product-item ice-cream">
+                        <picture>
+                            <source srcset="./images/desktop/ice-cream.png 1x, ./images/desktop/ice-cream@2x.png 2x"
+                                media="(min-width: 1198px)">
+                            <source srcset="./images/tablet/ice-cream.png 1x, ./images/tablet/ice-cream@2x.png 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mobile/ice-cream.png 1x, ./images/mobile/ice-cream@2x.png 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/mobile/ice-cream.png" alt="Ice cream" class="product-img">
+                        </picture>
 
-                            <h3 class="product-sub-title">ice cream</h3>
+                        <h3 class="product-sub-title">ice cream</h3>
 
-                            <div class="product-elipse-container">
-                                <svg class="product-elipse" width="12" height="12">
+                        <ul class="product-elipse-container">
+                            <li><svg class="product-elipse" width="12" height="12">
                                     <use href="./images/icons.svg#icon-ellipse"></use>
-                                </svg>
-                                <svg class="product-elipse" width="12" height="12">
+                                </svg></li>
+                            <li><svg class="product-elipse" width="12" height="12">
                                     <use href="./images/icons.svg#icon-ellipse"></use>
-                                </svg>
-                                <svg class="product-elipse" width="12" height="12">
+                                </svg></li>
+                            <li><svg class="product-elipse" width="12" height="12">
                                     <use href="./images/icons.svg#icon-ellipse"></use>
-                                </svg>
-                            </div>
+                                </svg></li>
+                        </ul>
 
-                            <p class="product-text">
-                                Indulge in our rich and creamy ice cream, handcrafted with all-natural
-                                ingredients and available in a variety of flavors.
-                            </p>
+                        <p class="product-text">
+                            Indulge in our rich and creamy ice cream, handcrafted with all-natural
+                            ingredients and available in a variety of flavors.
+                        </p>
 
+                        <a href="#made">
                             <img class="product-arrow" src="./images/arrow-right.png" alt="An arrow" width="40"
                                 height="40">
-                        </article>
+                        </a>
                     </li>
-                    <li class="product-item">
-                        <article class="product-article ice-coffee">
-                            <picture>
-                                <source
-                                    srcset="./images/desktop/ice-coffee.png 1x, ./images/desktop/ice-coffee@2x.png 2x"
-                                    media="(min-width: 1198px)">
-                                <source srcset="./images/tablet/ice-coffee.png 1x, ./images/tablet/ice-coffee@2x.png 2x"
-                                    media="(min-width: 768px)">
-                                <source srcset="./images/mobile/ice-coffee.png 1x, ./images/mobile/ice-coffee@2x.png 2x"
-                                    media="(max-width: 767px)">
-                                <img src="./images/mobile/ice-coffee.png" alt="Ice coffee" class="product-img">
-                            </picture>
+                    <li class="product-item ice-coffee">
+                        <picture>
+                            <source srcset="./images/desktop/ice-coffee.png 1x, ./images/desktop/ice-coffee@2x.png 2x"
+                                media="(min-width: 1198px)">
+                            <source srcset="./images/tablet/ice-coffee.png 1x, ./images/tablet/ice-coffee@2x.png 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mobile/ice-coffee.png 1x, ./images/mobile/ice-coffee@2x.png 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/mobile/ice-coffee.png" alt="Ice coffee" class="product-img">
+                        </picture>
 
-                            <h3 class="product-sub-title">ice coffee</h3>
+                        <h3 class="product-sub-title">ice coffee</h3>
 
-                            <div class="product-elipse-container">
-                                <svg class="product-elipse" width="12" height="12">
+                        <ul class="product-elipse-container">
+                            <li><svg class="product-elipse" width="12" height="12">
                                     <use href="./images/icons.svg#icon-ellipse"></use>
-                                </svg>
-                                <svg class="product-elipse" width="12" height="12">
+                                </svg></li>
+                            <li><svg class="product-elipse" width="12" height="12">
                                     <use href="./images/icons.svg#icon-ellipse"></use>
-                                </svg>
-                                <svg class="product-elipse" width="12" height="12">
+                                </svg></li>
+                            <li><svg class="product-elipse" width="12" height="12">
                                     <use href="./images/icons.svg#icon-ellipse"></use>
-                                </svg>
-                            </div>
+                                </svg></li>
+                        </ul>
 
-                            <p class="product-text ice-coffee">
-                                Refresh and energize with our perfectly brewed iced coffee, made with high-quality beans
-                                and served over ice.
-                            </p>
+                        <p class="product-text ice-coffee">
+                            Refresh and energize with our perfectly brewed iced coffee, made with high-quality beans
+                            and served over ice.
+                        </p>
 
+                        <a href="#made">
                             <img class="product-arrow" src="./images/arrow-right.png" alt="An arrow" width="40"
                                 height="40">
-                        </article>
+                        </a>
                     </li>
-                    <li class="product-item">
-                        <article class="product-article milkshake">
-                            <picture>
-                                <source
-                                    srcset="./images/desktop/milkshakes.png 1x, ./images/desktop/milkshakes@2x.png 2x"
-                                    media="(min-width: 1198px)">
-                                <source srcset="./images/tablet/milkshakes.png 1x, ./images/tablet/milkshakes@2x.png 2x"
-                                    media="(min-width: 768px)">
-                                <source srcset="./images/mobile/milkshakes.png 1x, ./images/mobile/milkshakes@2x.png 2x"
-                                    media="(max-width: 767px)">
-                                <img src="./images/mobile/milkshakes.png" alt="Milkshake" class="product-img">
-                            </picture>
-                            <h3 class="product-sub-title">milkshakes</h3>
+                    <li class="product-item milkshake">
+                        <picture>
+                            <source srcset="./images/desktop/milkshakes.png 1x, ./images/desktop/milkshakes@2x.png 2x"
+                                media="(min-width: 1198px)">
+                            <source srcset="./images/tablet/milkshakes.png 1x, ./images/tablet/milkshakes@2x.png 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mobile/milkshakes.png 1x, ./images/mobile/milkshakes@2x.png 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/mobile/milkshakes.png" alt="Milkshake" class="product-img">
+                        </picture>
+                        <h3 class="product-sub-title">milkshakes</h3>
 
-                            <div class="product-elipse-container">
-                                <svg class="product-elipse" width="12" height="12">
+                        <ul class="product-elipse-container">
+                            <li><svg class="product-elipse" width="12" height="12">
                                     <use href="./images/icons.svg#icon-ellipse"></use>
-                                </svg>
-                                <svg class="product-elipse" width="12" height="12">
+                                </svg></li>
+                            <li><svg class="product-elipse" width="12" height="12">
                                     <use href="./images/icons.svg#icon-ellipse"></use>
-                                </svg>
-                                <svg class="product-elipse" width="12" height="12">
+                                </svg></li>
+                            <li><svg class="product-elipse" width="12" height="12">
                                     <use href="./images/icons.svg#icon-ellipse"></use>
-                                </svg>
-                            </div>
+                                </svg></li>
+                        </ul>
 
-                            <p class="product-text">
-                                Satisfy your sweet tooth with our thick, made with premium ice cream, topped with
-                                whipped cream and your favorite toppings.
-                            </p>
+                        <p class="product-text">
+                            Satisfy your sweet tooth with our thick, made with premium ice cream, topped with
+                            whipped cream and your favorite toppings.
+                        </p>
 
+                        <a href="#made">
                             <img class="product-arrow" src="./images/arrow-right.png" alt="An arrow" width="40"
                                 height="40">
-                        </article>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -280,7 +279,7 @@
                             media="(min-width: 768px)">
                         <source srcset="./images/mobile/made-img.png 1x, ./images/mobile/made-img@2x.png 2x"
                             media="(max-width: 767px)">
-                        <img src="./images/mobile/made-img.png" alt="A cow">
+                        <img class="im" src="./images/mobile/made-img.png" alt="A cow">
                     </picture>
 
                     <div class="made-text-container">
@@ -295,14 +294,15 @@
                             of ice cream, 15 types of coffee and 23 milkshakes.
                         </p>
 
-                        <div class="made-button-container">
-                            <button class="made-button" type="button">Read more</button>
+                        <button class="made-button" type="button">
+                            Read more
                             <svg class="made-button-arrow" width="8" height="10">
                                 <use href="./images/icons.svg#icon-arrow"></use>
                             </svg>
-                        </div>
+                        </button>
                     </div>
                 </div>
+
 
                 <ul class="made-list">
                     <li class="made-item">
@@ -377,17 +377,23 @@
                     </p>
                 </div>
 
-                <div class="feedback-elipse-container">
-                    <svg class="feedback-elipse" width="4" height="4">
-                        <use href="./images/icons.svg#icon-ellipse"></use>
-                    </svg>
-                    <svg class="feedback-elipse" width="4" height="4">
-                        <use href="./images/icons.svg#icon-ellipse"></use>
-                    </svg>
-                    <svg class="feedback-elipse" width="4" height="4">
-                        <use href="./images/icons.svg#icon-ellipse"></use>
-                    </svg>
-                </div>
+                <ul class="feedback-elipse-container">
+                    <li>
+                        <svg class="feedback-elipse" width="4" height="4">
+                            <use href="./images/icons.svg#icon-ellipse"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="feedback-elipse" width="4" height="4">
+                            <use href="./images/icons.svg#icon-ellipse"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="feedback-elipse" width="4" height="4">
+                            <use href="./images/icons.svg#icon-ellipse"></use>
+                        </svg>
+                    </li>
+                </ul>
 
                 <p class="feedback-author">Emily, Los Angeles</p>
 
@@ -411,94 +417,85 @@
             <div class="container address-container">
                 <ul class="address-list">
                     <li class="address-item">
-                        <article class="address-article">
-                            <div class="address-text">
-                                <p class="address-lable cafe">CAFE</p>
-                                <h3 class="address-city">Chicago</h3>
-                                <p class="address-description">
-                                    Handcrafted coffee, baked goods, and premium ice cream.
-                                </p>
-                            </div>
-                            <ul class="address-schedule-list">
-                                <li class="address-schedule-item">
-                                    <p class="schedule-day">Monday - Friday</p>
-                                    <p class="schedule-time">06:00 AM - 10:00 PM</p>
-                                </li>
-                                <li class="address-schedule-item">
-                                    <p class="schedule-day">Saturday - Sunday</p>
-                                    <p class="schedule-time">08:00 AM - 16:00 PM</p>
-                                </li>
-                            </ul>
-                            <ul class="address-contacts-list">
-                                <li class="address-contacts-item">
-                                    <a class="address-contacts-link" href="tel:+610383766284 ">+61(0) 383 766 284</a>
-                                </li>
-                                <li class="address-contacts-item">
-                                    <a class="address-contacts-link"
-                                        href="mailto:noreply@envato.com">noreply@envato.com</a>
-                                </li>
-                            </ul>
-                        </article>
+                        <div class="address-text">
+                            <p class="address-lable cafe">CAFE</p>
+                            <h3 class="address-city">Chicago</h3>
+                            <p class="address-description">
+                                Handcrafted coffee, baked goods, and premium ice cream.
+                            </p>
+                        </div>
+                        <ul class="address-schedule-list">
+                            <li class="address-schedule-item">
+                                <p class="schedule-day">Monday - Friday</p>
+                                <p class="schedule-time">06:00 AM - 10:00 PM</p>
+                            </li>
+                            <li class="address-schedule-item">
+                                <p class="schedule-day">Saturday - Sunday</p>
+                                <p class="schedule-time">08:00 AM - 16:00 PM</p>
+                            </li>
+                        </ul>
+                        <ul class="address-contacts-list">
+                            <li class="address-contacts-item">
+                                <a class="address-contacts-link" href="tel:+610383766284 ">+61(0) 383 766 284</a>
+                            </li>
+                            <li class="address-contacts-item">
+                                <a class="address-contacts-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="address-item">
-                        <article class="address-article">
-                            <div class="address-text">
-                                <p class="address-lable foodtruck">FOOD TRUCK</p>
-                                <h3 class="address-city">Los Angeles</h3>
-                                <p class="address-description">
-                                    Fusion cuisine and refreshing ice cream made with passion.
-                                </p>
-                            </div>
-                            <ul class="address-schedule-list">
-                                <li class="address-schedule-item">
-                                    <p class="schedule-day">Monday - Friday</p>
-                                    <p class="schedule-time">06:00 AM - 10:00 PM</p>
-                                </li>
-                                <li class="address-schedule-item">
-                                    <p class="schedule-day">Saturday - Sunday</p>
-                                    <p class="schedule-time">08:00 AM - 16:00 PM</p>
-                                </li>
-                            </ul>
-                            <ul class="address-contacts-list">
-                                <li class="address-contacts-item">
-                                    <a class="address-contacts-link" href="tel:+610383766284 ">+61(0) 383 766 284</a>
-                                </li>
-                                <li class="address-contacts-item">
-                                    <a class="address-contacts-link"
-                                        href="mailto:noreply@envato.com">noreply@envato.com</a>
-                                </li>
-                            </ul>
-                        </article>
+                        <div class="address-text">
+                            <p class="address-lable foodtruck">FOOD TRUCK</p>
+                            <h3 class="address-city">Los Angeles</h3>
+                            <p class="address-description">
+                                Fusion cuisine and refreshing ice cream made with passion.
+                            </p>
+                        </div>
+                        <ul class="address-schedule-list">
+                            <li class="address-schedule-item">
+                                <p class="schedule-day">Monday - Friday</p>
+                                <p class="schedule-time">06:00 AM - 10:00 PM</p>
+                            </li>
+                            <li class="address-schedule-item">
+                                <p class="schedule-day">Saturday - Sunday</p>
+                                <p class="schedule-time">08:00 AM - 16:00 PM</p>
+                            </li>
+                        </ul>
+                        <ul class="address-contacts-list">
+                            <li class="address-contacts-item">
+                                <a class="address-contacts-link" href="tel:+610383766284 ">+61(0) 383 766 284</a>
+                            </li>
+                            <li class="address-contacts-item">
+                                <a class="address-contacts-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="address-item">
-                        <article class="address-article">
-                            <div class="address-text">
-                                <p class="address-lable cafe">CAFE</p>
-                                <h3 class="address-city">New York</h3>
-                                <p class="address-description">
-                                    Specialty teas, artisanal pastries,mouth—watering ice cream.
-                                </p>
-                            </div>
-                            <ul class="address-schedule-list">
-                                <li class="address-schedule-item">
-                                    <p class="schedule-day">Monday - Friday</p>
-                                    <p class="schedule-time">06:00 AM - 10:00 PM</p>
-                                </li>
-                                <li class="address-schedule-item">
-                                    <p class="schedule-day">Saturday - Sunday</p>
-                                    <p class="schedule-time">08:00 AM - 16:00 PM</p>
-                                </li>
-                            </ul>
-                            <ul class="address-contacts-list">
-                                <li class="address-contacts-item">
-                                    <a class="address-contacts-link" href="tel:+610383766284 ">+61(0) 383 766 284</a>
-                                </li>
-                                <li class="address-contacts-item">
-                                    <a class="address-contacts-link"
-                                        href="mailto:noreply@envato.com">noreply@envato.com</a>
-                                </li>
-                            </ul>
-                        </article>
+                        <div class="address-text">
+                            <p class="address-lable cafe">CAFE</p>
+                            <h3 class="address-city">New York</h3>
+                            <p class="address-description">
+                                Specialty teas, artisanal pastries,mouth—watering ice cream.
+                            </p>
+                        </div>
+                        <ul class="address-schedule-list">
+                            <li class="address-schedule-item">
+                                <p class="schedule-day">Monday - Friday</p>
+                                <p class="schedule-time">06:00 AM - 10:00 PM</p>
+                            </li>
+                            <li class="address-schedule-item">
+                                <p class="schedule-day">Saturday - Sunday</p>
+                                <p class="schedule-time">08:00 AM - 16:00 PM</p>
+                            </li>
+                        </ul>
+                        <ul class="address-contacts-list">
+                            <li class="address-contacts-item">
+                                <a class="address-contacts-link" href="tel:+610383766284 ">+61(0) 383 766 284</a>
+                            </li>
+                            <li class="address-contacts-item">
+                                <a class="address-contacts-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
 
@@ -530,21 +527,24 @@
                     <div class="social-container">
                         <ul class="social-list">
                             <li class="social-item">
-                                <a class="social-link" href="">
+                                <a class="social-link" href="https://github.com/" target="_blank"
+                                    aria-label="Github icon">
                                     <svg class="social-link-icon" width="32" height="32">
                                         <use href="./images/icons.svg#icon-github"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-item">
-                                <a class="social-link" href="">
+                                <a class="social-link" href="https://web.telegram.org" target="_blank"
+                                    aria-label="Telegram icon">
                                     <svg class="social-link-icon" width="32" height="32">
                                         <use href="./images/icons.svg#icon-telegram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-item">
-                                <a class="social-link" href="">
+                                <a class="social-link" href="https://www.facebook.com/" target="_blank"
+                                    aria-label="Facebook icon">
                                     <svg class="social-link-icon" width="32" height="32">
                                         <use href="./images/icons.svg#icon-fb"></use>
                                     </svg>
